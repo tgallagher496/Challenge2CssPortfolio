@@ -1,95 +1,68 @@
-/* Universal Selector */
-* {
-    margin:0;
-    padding:0;  
-  }
-  
-  /* Element Selectors */
-  body {
-    position: relative;
-    font-family: "Goudy Bookletter 1911", sans-serif;
-    font-size: 20px;
-    background-color: #c4e0f9;
-    color:#2ec0f9;
-  }
-  
-  
-  h1.name{
-    text-size-adjust: 30%;
-    color:black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-    padding:20px;
-    text-align:left;
-  }
-  
-  main {
-    padding: 60px 0;
-  }
-  
-  li {
-    display: inline;
-    padding: 0px 20px;
-    text-decoration: none;
-  }
-  
-  
-  header,
-  footer {
-    height: 60px;
-    width: 100%;
-    line-height: 60px;
-    background-color: #2ec0f9;
-  }
+header{
+  border:1px solid red;
+  height: 10vh;
+}
 
-  nav{
-    background-color:#B95F89;
+figure{
+  border: 1px solid blue;
+  height: 20vh
+}
 
-  }
-  
-  header {
-    position: flex;
-    border-bottom: 15px solid #4F4846;
-  }
-  
-  footer {
-    position: absolute;
-    margin-top: 0;
-    bottom: 0;
-    border-bottom: 10px solid #4F4846;
-    color: #FDF8F5;    
-  }
+.section-title{
+  flex-basis: 20%;
+    border-right-color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
 
-  
-  figure {
-    margin-bottom: 40px;
-  }
-  
-  img {
-    display: block;
-    margin: 20px auto;
-  }
-   
-  /* Class Selectors */
-  .text-center {
-    text-align: center;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
-  .text-left{
-      text-algin: left;
-  }
-  
-  .p-column{
+.stripedbackground{
+  background:
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+  radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+  linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+  background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+  background-color: #840b2a;
+
+}
+
+.section-content{
+  flex-basis: 80%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#aboutMe {
+  border: 1px solid green;
+  height: 30vh;
+}
+.smaller-picture{
+  flex-basis: 50%;
+  border: 1px solid green;
+  height: 30vh;
+}
+
+#work{
+    border: 1px solid orange;
+    height: 150vh;
+}
+
+#contact{
+    border: 1px solid black;
+    height: 20vh;
+}
+
+#aboutMe, #work, #contact{
     display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    border-right: #B95F89;
-  }
-  .linear-gradient-background {
-    background-image: linear-gradient(
-      rgba(232, 102, 236, 0.3) 0%,
-      rgba(232, 102, 236, 0.6) 100%
-    );
-  }
+    flex-wrap: wrap;
+}
+
+#first-picture{
+    flex-basis: 100%;
+    border: 1px solid violet;
+    height: 60vh;
+}
