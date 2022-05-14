@@ -1,19 +1,55 @@
 header{
-  border:1px solid red;
+ background-color: #006782;
   height: 10vh;
+  display:block;
 }
+
+
 
 figure{
   border: 1px solid blue;
-  height: 20vh
+  height: 20vh;
 }
 
 .section-title{
+  display:flex;
   flex-basis: 20%;
+  justify-content:center;
+  border-width: 20px;
     border-right-color: black;
-    border-right-width: 1px;
+    border-right-width: 10px;
     border-right-style: solid;
+    background-color: #187546;
+    font-size: 20pt;
+
 }
+
+.h1{
+  font-size: 20px;
+  font-style: bold;
+  display:flex;
+}
+
+.left {
+  float: left;
+  margin: 1rem;
+  align-items: flex-start;
+  flex-direction:initial;
+}
+
+.nav{
+  display: flex;
+  justify-content:flex-end;
+  flex-direction:initial;
+
+}
+
+.nav li{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2rem;
+}
+
 
 .stripedbackground{
   background:
@@ -26,43 +62,53 @@ figure{
   linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
   background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
   background-color: #840b2a;
-
 }
 
-.section-content{
-  flex-basis: 80%;
-  display: flex;
-  flex-wrap: wrap;
-
+.right{
+  display:flex;
+  justify-content:flex-end;
+  flex-direction:initial;
 }
 
 #aboutMe {
-  border: 1px solid green;
-  height: 30vh;
-}
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+  }
+  #work {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+  }
+  #contactMe {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+  }
+  
 .smaller-picture{
   flex-basis: 50%;
   border: 1px solid green;
   height: 30vh;
 }
 
-#work{
-    border: 1px solid orange;
-    height: 150vh;
+.float-left {
+  float: left;
+  margin-right: 25px;
+  height:200px;
 }
 
-#contact{
-    border: 1px solid black;
-    height: 20vh;
-}
-
-#aboutMe, #work, #contact{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#first-picture{
-    flex-basis: 100%;
-    border: 1px solid violet;
-    height: 60vh;
+.float-right {
+  float: right;
+  margin-right: 25px;
+  height:200px;
 }
