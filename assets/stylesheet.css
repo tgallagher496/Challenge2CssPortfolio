@@ -64,6 +64,11 @@ figure{
   background-color: #840b2a;
 }
 
+.stripedbackground h1{
+  position: relative;
+  bottom:0;
+}
+
 .right{
   display:flex;
   justify-content:flex-end;
@@ -75,30 +80,38 @@ figure{
     padding: 50px;
     height: 300px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-color: #0072bb;
+    background-color: #00678b;
     color: #ffffff;
+    line-height: normal;
   }
   #work {
+
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 100%;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-color: #0072bb;
+    background-color: #00678b;
     color: #ffffff;
+    display:flex;
+    flex-direction: row;
+    line-height: normal;
+
+
   }
   #contactMe {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: 10px;
+    padding: 20px;
+    height: 200px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    background-color: #0072bb;
+    background-color: #00678b;
     color: #ffffff;
+       line-height: normal;
   }
   
 .smaller-picture{
-  flex-basis: 50%;
-  border: 1px solid green;
-  height: 30vh;
+  display: flex;
+  height:100px;
+  margin:30px;
 }
 
 .float-left {
@@ -111,4 +124,49 @@ figure{
   float: right;
   margin-right: 25px;
   height:200px;
+}
+
+.bigPic{
+  height:200px;
+}
+
+.info{
+  display: flex;
+  justify-content:flex-end;
+  flex-direction:initial;
+}
+.info li{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2rem;
+}
+
+.pics{
+  display:flex;
+  flex-direction: row;
+margin-top: 1px;
+flex-wrap:wrap;
+margin:0;
+width:100%;
+
+}
+
+@media screen and (max-width: 768px) {
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  main,
+  nav {
+    flex-direction: column;
+  }
+  /* Make the sidebar stack below the body */
+  section {
+    order: 2;
+  }
+  /* Change the header background */
+  header {
+    background: #772014;
+  }
+  /* Change the navbar and footer background */
+  nav {
+    background-color: #bb8588;
+  }
 }
